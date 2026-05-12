@@ -31,7 +31,7 @@
         type="submit">Signup</button>
 
 
-        <p class="text-sm mt-4">You have an account click <a href="/" class="underline text-sm text-blue-500 ">Login</a> to enjoy experience</p>
+        <p class="text-sm mt-3">You have an account click <a href="/" class="underline text-sm text-blue-500 ">Login</a> to enjoy experience</p>
  
       </div>
 
