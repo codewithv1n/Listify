@@ -7,8 +7,7 @@ use Illuminate\Support\Facades\Hash;
 
 class SignupController 
 {
-    public function store(Request $request)
-    {
+    public function signup(Request $request) {
         $request->validate([
             'name' => 'required|string|max:50',
             'username' => 'required|string|max:255|unique:users', 
@@ -21,7 +20,7 @@ class SignupController
             'password' => Hash::make($request->password), 
         ]);
 
-        return redirect('/login')->with('success', 'Account created!');
+        return redirect('/login');
     }
 }
 ?>

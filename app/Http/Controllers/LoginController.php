@@ -6,8 +6,7 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController 
 {
-    public function login(Request $request)
-    {
+    public function login(Request $request) {
         
         $credentials = $request->validate([
             'username' => ['required'],
@@ -21,9 +20,6 @@ class LoginController
             return redirect()->intended('/home'); 
         }
 
-        return back()->withErrors([
-            'username' => 'Incorrect Password',
-        ])->onlyInput('username');
     }
 }
 
